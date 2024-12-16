@@ -12912,7 +12912,7 @@ body#index .maincontent_v1 .mls_pag_button:not(.active) {
   color: #666666;
 }
 #header .logo {
-    max-width: 100%;
+    max-width: 120px;
 }
 
 #header .header-nav a.dropdown-item {
