@@ -24,7 +24,7 @@
 	<form class="search_form ybc_hide" method="get" action="{$search_controller_url|escape:'html':'UTF-8'}">
 		<span class="search_close"><i class="fa fa-times"></i></span>
 		<input type="hidden" name="controller" value="search">
-		<input type="text" name="s" value="{$search_string|escape:'html':'UTF-8'}" placeholder="{l s='Search...' d='Shop.Theme.Catalog'}">
+		<input type="text" name="s" value="{$search_string|escape:'html':'UTF-8'}" placeholder="{l s='Buscar...' d='Shop.Theme.Catalog'}">
 		<button type="submit">
 			<i class="material-icons">search</i>
 		</button>
