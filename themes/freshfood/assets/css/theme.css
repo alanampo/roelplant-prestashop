@@ -15727,9 +15727,10 @@ body .star-content div.star-hover {
   display: flex !important;
   width: 100vw !important;
   justify-content: center !important;
+  flex-direction: row !important;
 }
 
 .hero-1-title{
-  max-width: 800px !important;
+  max-width: 1000px !important;
   text-align:center !important;
 }
