@@ -15721,3 +15721,15 @@ body .star-content div.star-hover {
   outline: none!important;
 }
 /*# sourceMappingURL=theme.css.map*/
+
+
+.hero-1-wrapper {
+  display: flex !important;
+  width: 100vw !important;
+  justify-content: center !important;
+}
+
+.hero-1-title{
+  max-width: 800px !important;
+  text-align:center !important;
+}
