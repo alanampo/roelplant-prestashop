@@ -20,47 +20,47 @@
 *}
 {if $logged} 
     <div class="nav_link user-info-account">
-        <span title="{l s='My account' d='Shop.Theme.CustomerAccount'}" >
-            {l s='My Account' d='Shop.Theme.Actions'}<i class="fa fa-angle-down"></i>
+        <span title="{l s='Mi Cuenta' d='Shop.Theme.CustomerAccount'}" >
+            {l s='Mi Cuenta' d='Shop.Theme.Actions'}<i class="fa fa-angle-down"></i>
         </span>
         <ul class="nav_link_dropdown">
             <li>
-                <a class="" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='My account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
-                    {l s='My Account' d='Shop.Theme.Actions'}
+                <a class="" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='Mi Cuenta' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
+                    {l s='Mi Cuenta' d='Shop.Theme.Actions'}
                 </a>
             </li>
             {hook h='displaycustom'}
             <li class="user_logged">
-                <a class="" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='My account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
-                    {l s='Sign Out' d='Shop.Theme.Actions'}
+                <a class="" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='Mi Cuenta' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
+                    {l s='Cerrar Sesión' d='Shop.Theme.Actions'}
                 </a>
             </li>
         </ul>
     </div>
     
     <a class="logout nav_link" href="{$logout_url|escape:'html':'UTF-8'}" rel="nofollow" >
-        {l s='Sign Out' d='Shop.Theme.Actions'}
+        {l s='Cerrar Sesión' d='Shop.Theme.Actions'}
     </a>
 {else}
         <div class="nav_link user-info-account">
-          <span title="{l s='My account' d='Shop.Theme.CustomerAccount'}" >
-                {l s='My Account' d='Shop.Theme.Actions'}<i class="fa fa-angle-down"></i>
+          <span title="{l s='Mi Cuenta' d='Shop.Theme.CustomerAccount'}" >
+                {l s='Mi Cuenta' d='Shop.Theme.Actions'}<i class="fa fa-angle-down"></i>
             </span> 
           <ul class="nav_link_dropdown">
                 <li>
-                    <a class="" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='My account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
-                        {l s='My Account' d='Shop.Theme.Actions'}
+                    <a class="" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='Mi Cuenta' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
+                        {l s='Mi Cuenta' d='Shop.Theme.Actions'}
                     </a>
                 </li>
                 {hook h='displaycustom'}
                 <li class="user_login">
-                    <a class="" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='My account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
-                        {l s='Sign In' d='Shop.Theme.Actions'}
+                    <a class="" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='Mi Cuenta' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
+                        {l s='Iniciar Sesión' d='Shop.Theme.Actions'}
                     </a>
                 </li>
             </ul>
       </div>
       <a class="login nav_link" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='Log in to your customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
-        {l s='Sign In' d='Shop.Theme.Actions'}
+        {l s='Iniciar Sesión' d='Shop.Theme.Actions'}
       </a>      
 {/if}
