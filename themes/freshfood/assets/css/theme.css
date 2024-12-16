@@ -14090,7 +14090,7 @@ li {
 }
 @media (max-width: 991px) {
   #header .logo {
-    width: auto;
+    width: 120px;
   }
   .ybc_footer_text > span {
       display: none;
