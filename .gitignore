@@ -1,2 +1,3 @@
-/var/logs/*
-/var/cache/*
+# Ignorar carpetas de logs y caché
+/var/logs/
+/var/cache/
