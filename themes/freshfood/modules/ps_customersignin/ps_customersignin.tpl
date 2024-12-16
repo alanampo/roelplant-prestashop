@@ -60,7 +60,7 @@
                 </li>
             </ul>
       </div>
-      <a class="login nav_link" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='Log in to your customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
+      <a class="login nav_link" href="{$my_account_url|escape:'html':'UTF-8'}" title="{l s='Iniciar sesión en tu cuenta' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >
         {l s='Ingresar' d='Shop.Theme.Actions'}
       </a>      
 {/if}

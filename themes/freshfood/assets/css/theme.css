@@ -40,7 +40,7 @@ body .mls_slider {
 }
 .menu_and_cattree {
   background-color: #3cabdb;
-  margin-top: 57px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -13100,7 +13100,7 @@ body#index .maincontent_v1 .mls_pag_button:not(.active) {
   margin-top: 1px;
 }
 #header .header-top {
-  padding-top: 45px;
+  padding-top: 30px;
   width: 100%;
 }
 .right-nav .nav_link {
