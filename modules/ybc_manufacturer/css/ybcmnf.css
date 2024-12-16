@@ -1,0 +1,46 @@
+#ybc-mnf-block {
+  clear: left;
+  float: left;
+  max-width: 100%;
+  width: 100%;
+}
+#ybc-mnf-block > .container {
+  overflow: hidden;
+}
+.ybc-mnf-block-content {
+  border-top: 1px solid #efefef;
+  padding: 15px 0;
+  position: relative;
+}
+#ybc-mnf-block-ul {
+  display: block;
+  float: none;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+#ybc-mnf-block-ul li {
+  float: left;
+}
+.ybc-mnf-block-a-img {
+  float: left;
+  margin: 0;
+  max-width: 100%;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+#ybc-mnf-block-ul .ybc-mnf-block-a-img > img {
+  float: none;
+  margin: 0 auto;
+  max-width: 100%;
+  width: auto;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+{
+    "name": "chatgptcontentgenerator/productreviews",
+    "description": "Product reviews",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Chatgptcontentgenerator\\ProductReviews\\": "src/"
+        }
+    },
+    "require": {}
+}

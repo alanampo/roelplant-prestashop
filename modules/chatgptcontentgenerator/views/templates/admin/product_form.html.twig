@@ -1,0 +1,200 @@
+{%- block product_form_rest -%}
+    <div class="history_text">
+        <input type="hidden" id="gpt_edited_text" name="is_gpt_edited" value="0">
+    </div>
+
+    <ul class="nav nav-tabs" id="historyTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="product-name-tab" data-toggle="tab" href="#product-name" role="tab" aria-controls="product-name" aria-expanded="true">{{ 'Name'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="desc-tab" data-toggle="tab" href="#desc" role="tab" aria-controls="desc" aria-expanded="true">{{ 'Description'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="short-desc-tab" data-toggle="tab" href="#short-desc" role="tab" aria-controls="short-desc" aria-expanded="true">{{ 'Short description'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="historyTabContent">
+        <div class="tab-pane fade show active" id="product-name" role="tabpanel" aria-labelledby="product-name-tab">
+            {% for language in languages %}
+                <div class="language-tab {% if language.iso_code == 'en' %}active{% else %}d-none{% endif %}" data-lang="{{ language.iso_code }}">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>{{ 'Name'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                            <th>{{ 'Timestamp'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                            <th>{{ 'Actions'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% if productHistoryList is defined and productHistoryList %}
+                            {% for history in productHistoryList %}
+                                {% if history.id_lang == language.id_lang %}
+                                    <tr>
+                                        <th scope="row">{{ history.id_product_history }}</th>
+                                        <td>{{ history.name }}</td>
+                                        <td>{{ history.date_add }}</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-restore" title="{{ 'Restore'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}">
+                                                <i class="material-icons">restore</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="4">{{ 'No History Found'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="tab-pane fade" id="desc" role="tabpanel" aria-labelledby="desc-tab">
+            {% for language in languages %}
+                <div class="language-tab {% if language.iso_code == 'en' %}active{% else %}d-none{% endif %}" data-lang="{{ language.iso_code }}">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>{{ 'Description'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                            <th>{{ 'Timestamp'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                            <th>{{ 'Actions'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% if productHistoryList is defined and productHistoryList %}
+                            {% for history in productHistoryList %}
+                                {% if history.id_lang == language.id_lang %}
+                                    <tr>
+                                        <th scope="row">{{ history.id_product_history }}</th>
+                                        <td>
+                                            {{ history.description|striptags|length > 300 ? history.description|striptags|slice(0, 300) ~ '...' : history.description|striptags }}
+                                            {% if history.description|length > 300 %}
+                                                <span class="help-box view-full-text" data-lang-id="{{ language.id_lang }}"></span>
+                                                <input class="full-text-hidden" type="hidden" value="{{ history.description }}">
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ history.date_add }}</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-restore" title="{{ 'Restore'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}">
+                                                <i class="material-icons">restore</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="4">{{ 'No History Found'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="tab-pane fade" id="short-desc" role="tabpanel" aria-labelledby="short-desc-tab">
+            {% for language in languages %}
+                <div class="language-tab {% if language.iso_code == 'en' %}active{% else %}d-none{% endif %}" data-lang="{{ language.iso_code }}">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>{{ 'Shoer description'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                            <th>{{ 'Timestamp'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                            <th>{{ 'Actions'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% if productHistoryList is defined and productHistoryList %}
+                            {% for history in productHistoryList %}
+                                {% if history.id_lang == language.id_lang %}
+                                    <tr>
+                                        <th scope="row">{{ history.id_product_history }}</th>
+                                        <td>
+                                            {{ history.short_description|striptags|length > 300 ? history.short_description|striptags|slice(0, 300) ~ '...' : history.short_description|striptags }}
+                                            {% if history.short_description|length > 300 %}
+                                                <span class="help-box view-full-text" data-lang-id="{{ language.id_lang }}"></span>
+                                                <input class="full-text-hidden" type="hidden" value="{{ history.short_description }}">
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ history.date_add }}</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-restore" title="{{ 'Restore'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}">
+                                                <i class="material-icons">restore</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="4">{{ 'No History Found'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <input type="hidden" id="currentPage" value="{{ currentPage }}">
+    <input type="hidden" id="totalPages" value="{{ totalPages }}">
+    <input type="hidden" id="pageType" value="{{ pageType }}">
+
+    <nav aria-label="Pagination" class="pagination-wrapper">
+        <ul class="pagination justify-content-center">
+        </ul>
+    </nav>
+
+    <div class="modal fade" id="restoreModal" tabindex="-1" role="dialog" aria-labelledby="restoreModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="restoreModalLabel">{{ 'Restore Product Data'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="{{ 'Close'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="id_lang">{{ 'Language:'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</label>
+                        <select class="form-control" name="id_lang">
+                            {% for language in languages %}
+                                <option value="{{ language.id_lang }}">{{ language.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    {{ 'Are you sure you want to restore this data for product?'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">{{ 'Cancel'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</button>
+                    <button type="button" class="btn btn-primary btn-restore">{{ 'Restore'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="view-full-text" tabindex="-1" role="dialog" aria-labelledby="view-text" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="view-text">{{ 'View full text'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="{{ 'Close'|trans({}, 'Modules.Chatgptcontentgenerator.Admin') }}">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+{%- endblock -%}

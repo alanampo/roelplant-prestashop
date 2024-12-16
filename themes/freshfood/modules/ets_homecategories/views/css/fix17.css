@@ -1,0 +1,100 @@
+.homecat_product_list_wrapper .owl-item:not(:first-child) {
+  border-left: 1px solid #e7e7e7;
+}
+.homecat_product_list_wrapper .thumbnail-container{
+    border: none;
+}
+.content_list_cat > a {
+  border-left: 5px solid #fcd500;
+  color: #929292;
+  float: left;
+  line-height: 40px;
+  margin-right: 0;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.homecat_tabs .thumbnail-container {
+  padding-bottom: 5px;
+}
+.content_list_cat > a.active {
+  background-color: #333;
+  color: #fff;
+}
+.ets_home_categories li ul li a {
+  color: #929292;
+}
+.homcat_tab_sub_categroies a {
+  float: left;
+  line-height: 40px;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+.homcat_tab_sub_categroies li.active a {
+  background-color: #333;
+  color: #fff;
+}
+.homecat-tab-grouped .homcat_tab_sub_categroies li.active > a {
+  background-color: transparent;
+  color: #fcd500;
+}
+.content_list_cat .product_list.products {
+  margin: 0;
+}
+
+@media (max-width: 479px){
+    .homecat-tab-list .homecat_tabs,
+    .tabs-home-content {
+      padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

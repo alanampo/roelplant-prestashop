@@ -1,0 +1,13 @@
+a.page-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+table td p{
+   margin-bottom: 0;
+}
+
+#view-full-text .modal-body{
+    margin-top: 10px;
+    max-height: 300px;
+    overflow: auto;    
+}

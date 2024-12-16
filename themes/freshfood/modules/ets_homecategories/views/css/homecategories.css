@@ -1,0 +1,601 @@
+.ets_home_categories a,
+.ets_home_categories a:focus,
+.ets_home_categories a:active{
+   outline: none; 
+   -webkit-outline: none;
+   -moz-outline: none;
+   -ms-outline: none;
+   -o-outline: none;
+}
+.homecat_tabs_all .product_list {
+  margin: 0;
+}
+.homecat-tab-grouped .product_list, .homecat-tab-grouped .homecat_product_list_wrapper{
+    display: none;
+}
+.homecat-tab-grouped .product_list.active,
+.homecat-tab-grouped .homecat_product_list_wrapper.active{
+    display: block;
+}
+.homecat-tab-grouped .ets_homecat_category_list {
+  border-bottom: 1px solid #e1e1e1;
+  border-left: 5px solid #fcd500;
+  float: left;
+  margin-bottom: 10px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.homecat-tab-grouped > .ets_homecat_category_list > li.active > a {
+  background-color: #333;
+  color: #fff;
+}
+.homecat-tab-grouped .ets_homecat_category_list li > ul {
+  display: none;
+  position: absolute;
+}
+.homecat_tabs .owl-stage-outer, .homecat_tabs .owl-stage-outer *, .owl-loaded {
+  direction: ltr !important;
+}
+.ets_homecat_category_list > li > span, .ets_homecat_category_list > li > a {
+  color: #333333;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 40px;
+  max-width: 100%;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.ets_home_categories form {
+  float: right;
+  height: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.hidden {
+  display: none !important;
+}
+.homecat-tab-grouped .ets_home_categories form {
+  margin-top: -2px;
+}
+.homecat_tabs {
+  border: 1px solid #e7e7e7;
+  clear: left;
+  float: left;
+  margin-top: 43px;
+  padding: 25px 0;
+  width: 100%;
+}
+.ets_homecat_category_list li.active > ul {
+  display: block;
+  left: 0;
+  margin-top: 0;
+  top: 100%;
+}
+.ets_home_categories li {
+  float: left;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.ets_home_categories select {
+  border: 1px solid #DDDDDD;
+  color: #666666;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 3px 5px;
+}
+.ets_home_categories {
+  clear: both;
+  position: relative;
+}
+.homecat_product_list_wrapper .owl-nav {
+  display: box;
+  display: -o-box;
+  display: -ms-box;
+  display: -moz-box;
+  display: -webkit-box;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  position: absolute;
+  direction: ltr!important;
+}
+.homecat_tabs .owl-nav > div {
+  background-color: #d4d4d4;
+  cursor: pointer;
+  font-size: 0;
+  margin-left: 5px;
+  display: block!important
+}
+.homecat_tabs .owl-nav > div:hover {
+  background-color: #2FB5D2;
+  color: #FFFFFF;
+}
+.homecat_tabs .owl-nav > div:first-child {
+  margin-left: 0;
+}
+.ets_home_categories img {
+  max-width: 100%;
+}
+.homecat-tab-list .homecat_image {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+}
+.homecat-tab-list .homecat_image.homecat_image_below {
+  margin-top: 60px;
+}
+.homecat-tab-list .homecat_image.homecat_image_above {
+  margin-bottom: 60px;
+}
+.homecat-tab-list .homecat_image img{
+    width: 100%;
+}
+.homecat_tabs .owl-nav > div:hover:before{
+    color: #fff;
+}
+
+.homecat_tabs .owl-item {
+  float: left;
+}
+.homecat_tabs .owl-stage-outer {
+  display: block;
+  float: left;
+  overflow: hidden;
+  padding-bottom: 2px;
+  width: 100%;
+}
+.ets_home_categories li.discount {
+  display: none;
+}
+.ets_home_categories .homecat_tabs .homecat_product_list_wrapper {
+  display: none;
+}
+.ets_home_categories .homecat_tabs .homecat_product_list_wrapper.active {
+  display: block;
+}
+
+.ets_home_categories:not(.loading-disabled) .homecat_tabs.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@-webkit-keyframes LoadingSpiner {
+  from {
+		-webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+	}
+	to {
+		
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+	}
+}
+
+@keyframes LoadingSpiner {
+  from {
+		-webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+	}
+}
+.ets_home_categories a:not(.button):focus{
+  text-decoration: none;
+} 
+.ets_home_categories a:not(.button):hover {
+  color: #2FB5D2;
+  text-decoration: none;
+}
+.homecat_tabs.no_subcat_sort {
+  margin-top: 15px;
+}
+.homecat-load-more {
+  color: #878787;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.5625em;
+  text-align: right;
+}
+.homecat-load-more:hover{
+    color: #0fb5d2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*list*/
+.homecat-tab-list .ets_homecat_category_list > li {
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.homecat-tab-list .is_parent_cat_li > .homecat_tab_name {
+  border-left: 5px solid #fcd500;
+  color: #929292;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 15px;
+}
+.homecat-tab-list .is_parent_cat_li > .homecat_tab_name.active {
+  background-color: #333;
+  color: #fff;
+}
+.homecat-tab-list .homecat_tabs {
+  margin-top: 0;
+}
+.ets_home_categories.homecat-tab-grouped {
+  margin-bottom: 60px;
+}
+.homecat-tab-list .ets_homecat_category_list {
+  float: left;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  position: relative;
+  width: 100%;
+}
+.homecat-tab-list .ets_home_categories form {
+  float: right;
+  height: auto;
+  margin-bottom: 0;
+}
+.homecat-tab-list .ets_homecat_category_list li.active > ul {
+  float: left;
+  margin-top: 0;
+}
+.homecat_tabs .alert.alert-warning {
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/******************************** RTL Style *********************************************/
+
+
+.lang-rtl .homecat-tab-grouped .ets_homecat_category_list > li:not(:first-child) > span, 
+.lang-rtl .homecat-tab-grouped .ets_homecat_category_list > li:not(:first-child) > a {
+  border-right: 1px solid #666666;
+  border-left: none;
+  padding: 0 15px;
+}
+.lang-rtl .ets_homecat_category_list > li > span, 
+.lang-rtl .ets_homecat_category_list > li > a {
+  padding-right: 0;
+  padding-left: 15px;
+}
+.lang-rtl .ets_home_categories form {
+  float: left;
+}
+.lang-rtl .ets_homecat_category_list li.active > ul {
+  left: auto;
+  right: 0;
+  padding: 0;
+}
+.lang-rtl .ets_home_categories li {
+  float: right;
+}
+.lang-rtl .homecat-load-more {
+  text-align: left;
+}
+.lang-rtl .ets_home_categories li ul li:not(:last-child) {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.lang-rtl .homecat_product_list_wrapper .owl-nav {
+  left: 0;
+  right: auto;
+}
+.banner_inline_listproduct {
+  display: flex;
+  float: left;
+  width: 100%;
+}
+.banner_inline{
+    min-width: 25%;
+}
+
+
+
+/*responsive*/
+
+@media (min-width: 768px) and (max-width: 991px){
+    .banner_inline {
+      min-width: 33.33%;
+    }
+}
+@media (max-width: 800px){
+    .homecat_product_list_wrapper .owl-nav {
+      clear: left;
+      float: left;
+      margin-left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+    }
+    .homecat-tab-grouped .ets_homecat_category_list li.active > ul:before {
+      background-color: #999999;
+      content: "";
+      height: 1px;
+      left: 50%;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      width: 100px;
+    }
+    .ets_homecat_category_list li.active > ul {
+      float: left;
+      margin-top: 10px;
+      width: 100%;
+      position: relative;
+    }
+    .ets_home_categories li ul li a {
+      color: #999999;
+      font-size: 12px;
+    }
+    .ets_homecat_category_list > li > span, .ets_homecat_category_list > li > a {
+      width: 100%;
+    }
+    .ets_homecat_category_list > li:not(:first-child) > span, .ets_homecat_category_list > li:not(:first-child) > a {
+      border-left: medium none;
+    }
+    .lang-rtl .homecat-tab-grouped .ets_homecat_category_list > li:not(:first-child) > span, 
+    .lang-rtl .homecat-tab-grouped .ets_homecat_category_list > li:not(:first-child) > a {
+      border-right: none;
+    }
+    .ets_home_categories form {
+      float: left;
+      margin-bottom: 12px;
+      margin-left: 50%;
+      margin-top: 5px;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      height: auto;
+      margin-top: 0;
+       white-space: nowrap;
+    }
+    .homecat_tabs {
+      margin-top: 0;
+    }
+    .homecat-tab-list .ets_homecat_category_list > li {
+      margin-bottom: 50px;
+    }
+    .homecat-tab-list .ets_homecat_category_list li.active > ul {
+      margin-top: 0;
+    }
+    .homecat-load-more {
+      text-align: center;
+    }
+    .ets_homecat_category_list > li > span, .ets_homecat_category_list > li > a {
+      padding-right: 0;
+    }
+}
+
+@media (max-width: 767px){
+    .banner_inline {
+      display: none;
+    }
+    .banner_inline + .content_list_cat {
+      width: 100%;
+    }
+    .homecat_product_list_wrapper .owl-nav {
+      bottom: auto;
+      clear: left;
+      float: left;
+      left: 50%;
+      margin: 15px 0 20px;
+      position: relative;
+      right: auto;
+      top: auto;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.sk-fading-circle {
+  display: none;
+}
+.homecat_tabs.loading .sk-fading-circle{
+  display: block;
+}
+.homecat_tab_carousel_enabled.homecat_tabs .sk-fading-circle{
+    margin-top: -10px;
+}
+/*animation*/
+.sk-fading-circle {
+  height: 40px;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  width: 40px;
+  margin-top: -50px;
+  z-index: 9;
+}
+
+.sk-fading-circle .sk-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sk-fading-circle .sk-circle:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+          animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+}
+.sk-fading-circle .sk-circle2 {
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.sk-fading-circle .sk-circle3 {
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+.sk-fading-circle .sk-circle4 {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.sk-fading-circle .sk-circle5 {
+  -webkit-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+.sk-fading-circle .sk-circle6 {
+  -webkit-transform: rotate(150deg);
+      -ms-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+.sk-fading-circle .sk-circle7 {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.sk-fading-circle .sk-circle8 {
+  -webkit-transform: rotate(210deg);
+      -ms-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+.sk-fading-circle .sk-circle9 {
+  -webkit-transform: rotate(240deg);
+      -ms-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+.sk-fading-circle .sk-circle10 {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.sk-fading-circle .sk-circle11 {
+  -webkit-transform: rotate(300deg);
+      -ms-transform: rotate(300deg);
+          transform: rotate(300deg); 
+}
+.sk-fading-circle .sk-circle12 {
+  -webkit-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+          transform: rotate(330deg); 
+}
+.sk-fading-circle .sk-circle2:before {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s; 
+}
+.sk-fading-circle .sk-circle3:before {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s; 
+}
+.sk-fading-circle .sk-circle4:before {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s; 
+}
+.sk-fading-circle .sk-circle5:before {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s; 
+}
+.sk-fading-circle .sk-circle6:before {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s; 
+}
+.sk-fading-circle .sk-circle7:before {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s; 
+}
+.sk-fading-circle .sk-circle8:before {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s; 
+}
+.sk-fading-circle .sk-circle9:before {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+.sk-fading-circle .sk-circle10:before {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.sk-fading-circle .sk-circle11:before {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.sk-fading-circle .sk-circle12:before {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+
+@-webkit-keyframes sk-circleFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
+@keyframes sk-circleFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
