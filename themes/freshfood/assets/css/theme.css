@@ -12915,6 +12915,10 @@ body#index .maincontent_v1 .mls_pag_button:not(.active) {
     max-width: 120px;
 }
 
+.logo-header {
+  max-width: 120px !important;
+}
+
 #header .header-nav a.dropdown-item {
   color: #888;
   line-height: 30px;

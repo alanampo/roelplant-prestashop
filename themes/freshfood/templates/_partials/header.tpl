@@ -53,7 +53,7 @@
       <div class="mobile_logo">
         <div class="" id="_mobile_logo">
           <a href="{$urls.base_url|escape:'html':'UTF-8'}">
-            <img class="logo img-responsive" src="{if isset($tc_dev_mode) && $tc_dev_mode && isset($logo_url)&&$logo_url} {$logo_url|escape:'html':'UTF-8'}{else} {$shop.logo|escape:'html':'UTF-8'}{/if}" alt="{$shop.name|escape:'html':'UTF-8'}">
+            <img class="logo img-responsive logo-header" src="{if isset($tc_dev_mode) && $tc_dev_mode && isset($logo_url)&&$logo_url} {$logo_url|escape:'html':'UTF-8'}{else} {$shop.logo|escape:'html':'UTF-8'}{/if}" alt="{$shop.name|escape:'html':'UTF-8'}">
           </a>
         </div>
       </div>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-sm-4 hidden-xs-down" id="_desktop_logo">
               <a href="{$urls.base_url|escape:'html':'UTF-8'}">
-                <img class="logo img-responsive" src="{if isset($tc_dev_mode) && $tc_dev_mode && isset($logo_url)&&$logo_url} {$logo_url|escape:'html':'UTF-8'}{else} {$shop.logo|escape:'html':'UTF-8'}{/if}" alt="{$shop.name|escape:'html':'UTF-8'}">
+                <img class="logo img-responsive logo-header" src="{if isset($tc_dev_mode) && $tc_dev_mode && isset($logo_url)&&$logo_url} {$logo_url|escape:'html':'UTF-8'}{else} {$shop.logo|escape:'html':'UTF-8'}{/if}" alt="{$shop.name|escape:'html':'UTF-8'}">
               </a>
             </div>
             {hook h='displayTop'}
